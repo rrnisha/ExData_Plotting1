@@ -8,7 +8,7 @@ source("prepData.R")
 doPlot4 <- function() {
   data <- prepData()
   png(filename="plot4.png", width=480, height=480)
-  par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(2,0,2,0))
+  par(mfrow=c(2,2), mar=c(4,4,2,1))
   
   plot(data$DateTime, data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
   
